@@ -4,21 +4,22 @@ public class Teste {
 	
 	public static void main(String[] args) {
 		
-		Conta cc = new Conta();
-		cc.depositar(150.0); 
-		cc.setAgencia(322);
-		cc.setNumero(321);
+		Conta conta1 = new Conta();
+		conta1.depositar(5000);
+		conta1.retirar(1500);
 		
-		cc.depositar(8500);
+		ContaCorrente2 conta2 = new ContaCorrente2();
+		conta2.depositar(4500);
+		conta2.retirar(950);
 		
-		System.out.println(cc.getSaldo());
+		Conta conta3 = new ContaCorrente2();
+		conta3.depositar(2500);
+		conta3.retirar(950);
 		
 		
-		Conta poupanca = new Conta(312, 334, 1600);
-		poupanca.retirar(540);
-		
-		System.out.println(poupanca.getSaldo());
-		
+		System.out.println("Conta1: " + conta1.getSaldo());
+		System.out.println("Conta2: " + conta2.getSaldo());
+		System.out.println("Conta3: " + conta3.getSaldo());
 	}
 
 }
