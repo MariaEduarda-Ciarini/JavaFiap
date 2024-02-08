@@ -3,8 +3,8 @@ package br.com.fiap.tds;
 import java.util.Scanner;
 
 public class IMC {
-	
-	public static void main(String[] args) {
+
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Digite sua altura em metros (exemplo: 1.75): ");
@@ -24,4 +24,3 @@ public class IMC {
         scanner.close();
     }
 }
-

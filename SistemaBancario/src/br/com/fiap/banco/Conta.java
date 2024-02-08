@@ -2,7 +2,7 @@ package br.com.fiap.banco;
 
 import java.io.Serializable;
 
-public class Conta implements Serializable{
+public class Conta implements Serializable {
 	/**
 	 * 
 	 */
@@ -10,18 +10,17 @@ public class Conta implements Serializable{
 	private int agencia;
 	private int numero;
 	private double saldo;
-	
+
 	public Conta() {
-		
+
 	}
-	
+
 	public Conta(int agencia, int numero, double saldo) {
 		this.agencia = agencia;
 		this.numero = numero;
 		this.saldo = saldo;
 	}
-	
-	
+
 	public int getAgencia() {
 		return agencia;
 	}
@@ -37,22 +36,18 @@ public class Conta implements Serializable{
 	public void setNumero(int numero) {
 		this.numero = numero;
 	}
-	
-	
 
 	public void depositar(double valor) {
 		this.saldo += valor;
 	}
-	
-	public void retirar (double valor) {
+
+	public void retirar(double valor) {
 		this.saldo -= valor;
-		
+
 	}
-	
+
 	public double getSaldo() {
 		return this.saldo;
 	}
 
 }
-
-

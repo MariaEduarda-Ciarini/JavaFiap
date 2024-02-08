@@ -1,3 +1,1 @@
-## Aprendendo mexer com Java
-### Ainda codando o projetinho (incompleto)
-##### coding....
+### Aprendendo mexer com Java, (nanocourse fiap)
